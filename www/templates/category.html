@@ -1,0 +1,15 @@
+<ion-view view-title="Categories">
+  <!-- do you want padding? -->
+  <ion-content ng-show="isLoaded">
+
+    <div class="card categories desh-atom-card-8 animated zoomIn" ui-sref="main.home" ng-repeat="category in categories track by $index">
+      <div class="item item-divider  animated fadeInRight">
+        {{category.title}}
+      </div>
+      <div class="item item-text-wrap no-padding animated fadeInLeft" >
+        <img  class="full-image" src="{{category.image}}">
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
