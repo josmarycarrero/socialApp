@@ -1,42 +1,42 @@
 <ion-view view-title="Profile" class="background-light">
+
+
   <ion-nav-buttons side="right">
         <button class="button button-clear icon ion-android-done" ng-click="doSomething()">
         </button>
-      </ion-nav-buttons>
+  </ion-nav-buttons>
+  
+
   <ion-content class="padding profile">
 
 
     <div class="desh-atom-profile-content desh-atom-md  desh-atom-round">
-      <img class=" animated zoomIn desh-atom-card desh-atom-card-12" src="{{user.avatar}}" />
+      <img class=" animated zoomIn desh-atom-card desh-atom-card-12" src="{{user.photoURL}}" />
     </div>
 
+
     <div class="list">
-      <label class="item item-input">
-        <span class="input-label">Username</span>
-        <input type="text" ng-value="user.username">
-      </label>
+
       <label class="item item-input">
         <span class="input-label">Name</span>
         <input type="text" ng-value="user.name">
       </label>
+
       <label class="item item-input">
         <span class="input-label">Email</span>
         <input type="text" ng-value="user.email">
       </label>
-      <label class="item item-input item-floating-label textarea">
-    <span class="input-label">Description</span>
-    <!--
-    <button class="button icon ion-social-facebook"></button>
-    <button class="button icon ion-social-googleplus"></button>
-    <button class="button icon ion-social-github"></button>
-    <button class="button icon ion-ionic"></button>
-    <button class="button icon ion-social-instagram"></button>
-  -->
 
-    <textarea type="text" rows="3" placeholder="description">{{user.description}}</textarea>
-  </label>
+      <label class="item item-input item-floating-label textarea">
+        <span class="input-label">Description</span>
+        <textarea type="text" rows="3" placeholder="description">{{description}}</textarea>
+      </label>
+
     </div>
 
+
   </ion-content>
+
+
 </ion-view>
 

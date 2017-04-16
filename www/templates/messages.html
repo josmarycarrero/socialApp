@@ -1,15 +1,6 @@
-<ion-view view-title="FB Messsanger">
+<ion-view view-title="Messages">
   <!-- do you want padding? -->
   <ion-content scroll="false" class="padding">
-    <ion-item class="item item-divider removebg no-side-borders">
-      Your Friends' Messages
-    </ion-item>
-    <ion-scroll direction="x" class="no-side-borders desh-atom-card-2 fit-to-screen">
-      <div style="width: 100%"  class="button-bar button-outline">
-        <a ng-repeat="user in users track by $index" ui-sref="main.message" >
-          <img src="{{user.image}}" width="50" class="avatar margin desh-atom-card-2" /></a>
-      </div>
-    </ion-scroll>
 
     <!-- content goes here -->
     <ion-scroll direction="y" style="height:200%">

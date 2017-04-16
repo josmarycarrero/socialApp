@@ -2,7 +2,7 @@
 angular.module('main')
 .controller('FacebookCtrl', function ($log, User, $scope, Message, $timeout, $ionicLoading) {
 
-  $log.log('Hello from your Controller: FacebookCtrl in module main:. This is your controller:', this);
+  $log.log('Hello from your Controller: MessagesCtrl in module main:. This is your controller:', this);
 
   $ionicLoading.show({
     templateUrl: 'templates/loading.html',

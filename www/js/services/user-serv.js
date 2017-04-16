@@ -8,7 +8,7 @@ angular.module('main')
       username: 'josma',
       name: 'Josmary Carrero',
       email: 'josmarycarrero@gmail.com',
-      avatar: 'img/images/profile-pic.jpg',
+      avatar: 'img/images/avatar1.png',
       github: 'https://github.com/josmarycarrero',
       ionic: 'http://market.ionic.io/user/305270',
       description: 'Hi, I am a Software Engineer. I love to develop mobile ' +

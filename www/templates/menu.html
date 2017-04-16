@@ -24,55 +24,34 @@
   <!-- SIDEMENU -->
   <ion-side-menu class="desh-atom" side="left" expose-aside-when="large">
 
-    <!-- menu header -->
-    <!--<ion-header-bar class="bar-calm">
-      <h1 class="title"></h1>
-    </ion-header-bar> -->
-
     <!-- menu content -->
     <ion-content>
       <ion-list>
-        <!--<div class="list list-inset">
-          <label class="item item-input">
-            <i class="icon ion-search placeholder-icon"></i>
-            <input type="text" placeholder="Search">
-          </label>
-        </div> -->
+
         <ion-item menu-close class="menu-avatar desh-atom-card-4" ui-sref="main.profile">
-          <img class="desh-atom-card-12" style="float:left" src="img/images/profile-pic.jpg" height="80" />
-          <span>Josma</span>
-          <!--<p>Software Engineer</p>
-          <p style="font-size:10px">Status- 98%</p> -->
+          <img class="desh-atom-card-12" style="float:left" src="{{user.photoURL}}" height="80" />
+          <span>{{user.name}}</span>
         </ion-item>
+
         <ion-item class="item item-icon-left menu-li" menu-close ui-sref="main.home">
           <i class="icon ion-ios-home-outline"> </i> Home
         </ion-item>
-        <!--<ion-item class="item item-icon-left" menu-close ui-sref="main.about">
-          About
-          <i class="icon ion-information-circled"></i>
-        </ion-item> -->
-      <!--  <ion-item class="item item-icon-left" menu-close ui-sref="main.category">
-          Category
-          <i class="icon ion-planet"></i>
-        </ion-item> -->
-       <!-- <ion-item class="item item-icon-left" menu-close ui-sref="main.bookmark">
-          BookMarks
-          <i class="icon ion-bookmark"></i>
-        </ion-item> -->
-        <!--<ion-item class="item item-icon-left" menu-close ui-sref="main.message">
+
+        <ion-item class="item item-icon-left" menu-close ui-sref="main.messages">
           Messages
-          <i class="icon ion-social-whatsapp"></i>
-        </ion-item> -->
-        <!--<ion-item class="item item-icon-left" menu-close ui-sref="main.facebook">
-          Facebook Chat
-          <i class="icon ion-social-facebook"></i>
-          <span class="badge">3</span>
+          <i class="icon ion-ios-chatboxes-outline"></i>
         </ion-item>
-        <ion-item class="item item-icon-left " menu-close ui-sref="main.settings">
+
+        <!--<ion-item class="item item-icon-left " menu-close ui-sref="main.settings">
           Settings
           <i class="icon ion-settings"></i>
         </ion-item> -->
-        <ion-item class="item item-icon-left" menu-close ui-sref="authLogin">
+        
+        <ion-item class="item item-icon-left" menu-close ui-sref="main.about">
+          About
+          <i class="icon ion-information-circled"></i>
+        </ion-item>         
+        <ion-item class="item item-icon-left" menu-close ui-sref="main.logout" >
           Logout
           <i class="icon ion-log-out"></i>
         </ion-item>

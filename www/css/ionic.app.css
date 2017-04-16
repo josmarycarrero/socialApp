@@ -10183,7 +10183,9 @@ ion-side-menu ion-content ion-list ion-item .item-content {
   padding: 30px !important; }
 
 .menu-avatar img {
-  border-radius: 100px; }
+  border-radius: 100px; 
+  background: white;
+}
 
 .menu-avatar span {
   float: left;
